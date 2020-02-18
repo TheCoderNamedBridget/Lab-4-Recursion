@@ -6,6 +6,8 @@ import java.lang.Math;
  * Add your code to the three functions given below.
  * Do not change any part of the function headers (name, parameters, or return type).
  * Do not change any part of main.
+ * @auther Bridget Naylor
+ * @date 2/17/2020
  */
 public class Main {
 	
@@ -91,17 +93,22 @@ public class Main {
  	 */
 	public static int revFibonacci( int f1, int f2, int c, int n ) {
 		
+		int smallerNumber = f2;//f1
+		int largerNumber = f1 + f2;//f2
+		
 		if ( c <= n) {
 			
-			System.out.println( "F1 n -2 = " + f1 + " F2 n -1 = " + f2 + " counter = " + c + " number to count to = " + n);
+			//System.out.println( "F1 n -2 = " + f1 + " F2 n -1 = " + f2 + " counter = " + c + " number to count to = " + n);
 			
-			return revFibonacci( f1 + f2, f2, c + 1, n );
+			//System.out.println( " Final Answer = " + revFibonacci( smallerNumber, largerNumber, c + 1, n ));
+			
+			return revFibonacci( smallerNumber, largerNumber, c + 1, n );
 			
 		} 
 		
-		System.out.println( " Final Answer = " + f1 + f2);
+		//System.out.println( "F2 = " + f1 );
 		
-		return f1 + f2;
+		return f1;
 		
 	}
 	
